@@ -29,3 +29,11 @@ def manage_marks():
 
     # Sort marks in descending order
     marks.sort(reverse=True)
+    
+    # Display results
+    print("\n----- Result -----")
+    print("Marks List :", marks)
+    print("Average Marks :", average)
+    print("Highest Marks :", highest)
+    print("Lowest Marks :", lowest)
+
