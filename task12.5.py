@@ -19,3 +19,16 @@ def unique_numbers_program():
                 break
             except ValueError:
                 print("Invalid input! Please enter an integer.")
+                
+    try:
+        # Convert set into tuple
+        number_tuple = tuple(numbers)
+
+        print("\nUnique Numbers (Set):", numbers)
+        print("Tuple:", number_tuple)
+        
+    except:
+        pass    
+
+
+   
