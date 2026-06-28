@@ -18,5 +18,6 @@ try:
         if num % 2 == 0:
             print(num, end=" ")
 
-except:
-    pass
+except Exception as e:
+    # Handle any unexpected errors
+    print("An error occurred:", e)
