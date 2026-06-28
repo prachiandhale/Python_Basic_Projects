@@ -20,3 +20,11 @@ def analyze_string(s):
             count += 1
 
     print("Number of vowels :", count)
+    
+    # Print each character with positive and negative index
+    print("\nCharacter\tPositive Index\tNegative Index")
+
+    for i in range(len(s)):
+        print(f"{s[i]}\t\t{i}\t\t{i - len(s)}")
+
+
