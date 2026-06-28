@@ -8,5 +8,8 @@ try:
      # Store squares in a list using lambda function
     square_list = list(map(square, numbers))
     
+     # Print all squares
+    print("Squares of numbers from 1 to 20:")
+    print(square_list)
 except:
     pass
