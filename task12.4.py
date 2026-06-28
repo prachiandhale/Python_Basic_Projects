@@ -75,3 +75,4 @@ def student_database():
         except Exception as e:
             print("Error:", e)
 
+student_database()
