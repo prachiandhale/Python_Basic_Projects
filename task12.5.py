@@ -17,6 +17,5 @@ def unique_numbers_program():
                 num = int(input(f"Enter number {i + 1}: "))
                 numbers.add(num)   # Store unique numbers only
                 break
-            
-            except:
-                pass
+            except ValueError:
+                print("Invalid input! Please enter an integer.")
