@@ -93,5 +93,28 @@ def scientific_calculator():
 
     except Exception as e:
         print("Error:", e)
+        
+# Function to generate random numbers
+def random_numbers():
+    try:
+        start = int(input("Enter Starting Number: "))
+        end = int(input("Enter Ending Number: "))
+
+        print("\nRandom Numbers:")
+        nums = []
+
+        for i in range(5):
+            num = random.randint(start, end)
+            nums.append(num)
+            print(num)
+
+        time = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+        history[time] = f"Random Numbers: {nums}"
+
+    except ValueError:
+        print("Invalid Input!")
+
+    except Exception as e:
+        print("Error:", e)
 
         
