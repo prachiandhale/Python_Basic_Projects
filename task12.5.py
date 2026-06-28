@@ -27,6 +27,13 @@ def unique_numbers_program():
         print("\nUnique Numbers (Set):", numbers)
         print("Tuple:", number_tuple)
         
+         # Check if there are at least 3 unique numbers
+        if len(number_tuple) >= 3:
+            random_numbers = random.sample(number_tuple, 3)
+            print("3 Random Numbers:", random_numbers)
+        else:
+            print("Less than 3 unique numbers available.")
+        
     except:
         pass    
 
