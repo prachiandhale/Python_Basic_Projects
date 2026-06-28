@@ -35,3 +35,24 @@ class Student:
         print("Roll No :", self.roll_no)
         print("Marks :", self.marks_list)
         print("Average :", self.get_average())
+        
+        
+try:
+    # Take student details
+    name = input("Enter Student Name: ")
+    roll_no = input("Enter Roll Number: ")
+
+    # Create Student object
+    student = Student(name, roll_no)
+
+    # Take marks for 5 subjects
+    print("\nEnter marks for 5 subjects:")
+    for i in range(5):
+        mark = input(f"Enter mark {i + 1}: ")
+        student.add_mark(mark)
+
+    # Display student details
+    student.display_info()
+
+except Exception as e:
+    print("An unexpected error occurred:", e)
