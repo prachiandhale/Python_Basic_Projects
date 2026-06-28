@@ -126,3 +126,39 @@ def view_history():
         print("\n===== HISTORY =====")
         for time, result in history.items():
             print(time, "->", result)
+        
+        
+# Main Menu
+while True:
+
+    print("\n========== SMART CALCULATOR & DATA MANAGER ==========")
+    print("1. Basic Arithmetic")
+    print("2. Scientific Calculator")
+    print("3. Generate Random Numbers")
+    print("4. View History")
+    print("5. Exit")
+
+    try:
+        choice = int(input("Enter Your Choice: "))
+
+        if choice == 1:
+            basic_arithmetic()
+
+        elif choice == 2:
+            scientific_calculator()
+
+        elif choice == 3:
+            random_numbers()
+
+        elif choice == 4:
+            view_history()
+
+        elif choice == 5:
+            print("Thank You!")
+            break
+
+        else:
+            print("Invalid Choice!")
+
+    except ValueError:
+        print("Please enter a valid number.")
