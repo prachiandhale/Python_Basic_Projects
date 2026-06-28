@@ -31,4 +31,17 @@ for i in range(3):
             break
         except ValueError:
             print("Invalid salary! Please enter a numeric value.")
+            
+            
+    # Create Employee object
+    emp = Employee(emp_id, name, department, salary)
+
+    # Store object in dictionary
+    employees[emp_id] = emp
+
+# Display all employee details
+print("\n===== EMPLOYEE DETAILS =====")
+
+for emp in employees.values():
+    emp.show_details()
     
