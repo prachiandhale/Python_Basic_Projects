@@ -7,3 +7,6 @@ def analyze_string(s):
         return
     # Print length of the string
     print("Length of the string :", len(s))
+    
+     # Print string in reverse
+    print("Reverse string :", s[::-1])
