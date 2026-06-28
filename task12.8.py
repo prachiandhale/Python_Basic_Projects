@@ -22,5 +22,12 @@ try:
     for word in sorted_words:
         print(word)
         
+     # Count unique words
+    total_unique = len(unique_words)
+
+    # Print square of total unique words using math module
+    print("\nTotal Unique Words:", total_unique)
+    print("Square of Total Unique Words:", math.pow(total_unique, 2))
+    
 except:
     pass
