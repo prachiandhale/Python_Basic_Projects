@@ -19,3 +19,10 @@ def manage_marks():
             except ValueError:
                 # Handle invalid (non-numeric) input
                 print("Invalid input! Please enter numeric marks only.")
+                
+     # Calculate average marks
+    average = sum(marks) / len(marks)
+    
+    # Find highest and lowest marks
+    highest = max(marks)
+    lowest = min(marks)
