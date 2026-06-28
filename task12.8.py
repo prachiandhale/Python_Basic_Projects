@@ -29,5 +29,8 @@ try:
     print("\nTotal Unique Words:", total_unique)
     print("Square of Total Unique Words:", math.pow(total_unique, 2))
     
-except:
-    pass
+except ValueError as e:
+    print("Error:", e)
+
+except Exception as e:
+    print("An unexpected error occurred:", e)
