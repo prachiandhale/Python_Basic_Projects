@@ -48,6 +48,8 @@ def unique_numbers_program():
 
     except Exception as e:
         print("Unexpected Error:", e) 
+        
+unique_numbers_program()
 
 
    
