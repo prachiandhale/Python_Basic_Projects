@@ -15,3 +15,12 @@ class Employee:
         print("Department  :", self.details[0])
         print("Salary      :", self.details[1])
 
+employees = {}
+
+# Add details of 3 employees
+for i in range(3):
+    print(f"\nEnter Details of Employee {i + 1}")
+
+    emp_id = input("Enter Employee ID: ")
+    name = input("Enter Employee Name: ")
+    department = input("Enter Department: ")
