@@ -24,3 +24,11 @@ for i in range(3):
     emp_id = input("Enter Employee ID: ")
     name = input("Enter Employee Name: ")
     department = input("Enter Department: ")
+    
+    while True:
+        try:
+            salary = float(input("Enter Salary: "))
+            break
+        except ValueError:
+            print("Invalid salary! Please enter a numeric value.")
+    
