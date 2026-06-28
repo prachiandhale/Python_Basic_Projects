@@ -117,4 +117,12 @@ def random_numbers():
     except Exception as e:
         print("Error:", e)
 
-        
+
+    # Function to view history
+def view_history():
+    if len(history) == 0:
+        print("No History Available.")
+    else:
+        print("\n===== HISTORY =====")
+        for time, result in history.items():
+            print(time, "->", result)
