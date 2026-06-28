@@ -26,3 +26,12 @@ class Student:
         if len(self.marks_list) == 0:
             return 0
         return sum(self.marks_list) / len(self.marks_list)
+
+
+     # Method to display student information
+    def display_info(self):
+        print("\n----- Student Details -----")
+        print("Name :", self.name)
+        print("Roll No :", self.roll_no)
+        print("Marks :", self.marks_list)
+        print("Average :", self.get_average())
