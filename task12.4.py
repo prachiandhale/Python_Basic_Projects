@@ -46,6 +46,18 @@ def student_database():
                     print("City :", record["City"])
                 else:
                     print("Student not found!")
+                    
+            elif choice == 3:
+                if len(students) == 0:
+                    print("No student records available.")
+                else:
+                    print("\n===== STUDENT RECORDS =====")
+                    for roll_no, record in students.items():
+                        print("----------------------------")
+                        print("Roll No :", roll_no)
+                        print("Name :", record["Name"])
+                        print("Age :", record["Age"])
+                        print("City :", record["City"])
 
         
         except:
