@@ -11,5 +11,12 @@ try:
      # Print all squares
     print("Squares of numbers from 1 to 20:")
     print(square_list)
+    
+     # Print only even squares
+    print("\nEven Squares:")
+    for num in square_list:
+        if num % 2 == 0:
+            print(num, end=" ")
+
 except:
     pass
