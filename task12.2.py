@@ -26,3 +26,6 @@ def manage_marks():
     # Find highest and lowest marks
     highest = max(marks)
     lowest = min(marks)
+
+    # Sort marks in descending order
+    marks.sort(reverse=True)
