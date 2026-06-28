@@ -34,6 +34,15 @@ def unique_numbers_program():
         else:
             print("Less than 3 unique numbers available.")
         
+         # Calculate sum and square root
+        total = sum(number_tuple)
+
+        if total < 0:
+            raise ValueError("Square root of a negative number is not possible.")
+
+        print("Sum of Tuple Elements:", total)
+        print("Square Root of Sum:", math.sqrt(total))
+        
     except:
         pass    
 
