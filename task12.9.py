@@ -51,4 +51,5 @@ def basic_arithmetic():
         print("Invalid Input! Please enter numbers only.")
 
     except Exception as e:
-        print("Error:", e)
+        print("Error:", e )
+        
