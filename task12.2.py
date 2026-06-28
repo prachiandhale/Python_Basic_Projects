@@ -37,3 +37,5 @@ def manage_marks():
     print("Highest Marks :", highest)
     print("Lowest Marks :", lowest)
 
+# Call the function
+manage_marks()
