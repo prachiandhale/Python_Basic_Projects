@@ -10,3 +10,13 @@ def analyze_string(s):
     
      # Print string in reverse
     print("Reverse string :", s[::-1])
+    
+     # Count vowels (case insensitive)
+    vowels = "aeiou"
+    count = 0
+
+    for ch in s.lower():
+        if ch in vowels:
+            count += 1
+
+    print("Number of vowels :", count)
