@@ -58,6 +58,13 @@ def student_database():
                         print("Name :", record["Name"])
                         print("Age :", record["Age"])
                         print("City :", record["City"])
+                        
+            elif choice == 4:
+                print("Exiting Student Database...")
+                break
+
+            else:
+                print("Invalid choice! Please select between 1 and 4.")
 
         
         except:
