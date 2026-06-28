@@ -43,8 +43,11 @@ def unique_numbers_program():
         print("Sum of Tuple Elements:", total)
         print("Square Root of Sum:", math.sqrt(total))
         
-    except:
-        pass    
+    except ValueError as e:
+        print("Error:", e)
+
+    except Exception as e:
+        print("Unexpected Error:", e) 
 
 
    
