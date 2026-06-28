@@ -67,5 +67,11 @@ def student_database():
                 print("Invalid choice! Please select between 1 and 4.")
 
         
-        except:
-            pass
+        # Handle invalid numeric input
+        except ValueError:
+            print("Invalid input! Please enter numeric values where required.")
+
+        # Handle any unexpected error
+        except Exception as e:
+            print("Error:", e)
+
