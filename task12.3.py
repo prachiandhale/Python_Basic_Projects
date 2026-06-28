@@ -19,3 +19,10 @@ class Student:
 
         except ValueError as e:
             print("Invalid Input!", e)
+            
+            
+     # Method to calculate average marks
+    def get_average(self):
+        if len(self.marks_list) == 0:
+            return 0
+        return sum(self.marks_list) / len(self.marks_list)
