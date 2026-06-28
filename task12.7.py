@@ -7,3 +7,11 @@ class Employee:
 
         # Store department and salary in a tuple
         self.details = (department, salary)
+        
+    # Method to display employee details
+    def show_details(self):
+        print("\nEmployee ID :", self.emp_id)
+        print("Name        :", self.name)
+        print("Department  :", self.details[0])
+        print("Salary      :", self.details[1])
+
