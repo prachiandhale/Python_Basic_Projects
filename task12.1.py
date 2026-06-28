@@ -27,4 +27,8 @@ def analyze_string(s):
     for i in range(len(s)):
         print(f"{s[i]}\t\t{i}\t\t{i - len(s)}")
 
+# Take user input
+string = input("Enter a string: ")
 
+# Call the function
+analyze_string(string)
